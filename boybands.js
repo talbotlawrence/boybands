@@ -6,26 +6,20 @@ var currentBand = "";
 var currentVeggie = "";
 
 var bandElement = document.getElementById("boy-bands");
-// bandElement.innerHTML = "Hi there you da man!!";
-// console.log("bandElement", bandElement);
-
 var veggieElement = document.getElementById("vegetables");
-// console.log("veggieElement", veggieElement);
 
 // Start looping//////////////////////////////////////////////////////////////////////////////////
+
 for (var i = 0; i < loopCount; i += 1) {
 
-  // Add the band names into the correct <div>
   currentBand = bands[i];
-  // var listBand = '<li>' + currentBand + '</li>';  //this feels wrong!!!!  there must be a built in method to accomplish this task
-  bandElement.innerHTML += listBand
+  var listBand = '<li>' + currentBand + '</li>';  //this feels wrong!!!!
+  bandElement.innerHTML += listBand + '<br>'
 
-  // Add the veggie names into the correct <div>
   currentVeggie = vegetables[i];
-  // var listVeggie = '<li>' + currentVeggie + '</li>';  
-  veggieElement.innerHTML += listVeggie
+  var listVeggie = '<li>' + currentVeggie + '</li>';  
+  veggieElement.innerHTML += listVeggie + '<br>'
 };
 
-// var addBandToList = document.write();
-
-// var addVeggieToList = document.write();
+// document.getElementById('foo').innerHTML = a + m + b;
+// document.getElementById('foo').innerHTML = a + m + b;
