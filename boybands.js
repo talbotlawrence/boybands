@@ -9,17 +9,13 @@ var bandElement = document.getElementById("boy-bands");
 var veggieElement = document.getElementById("vegetables");
 
 // Start looping//////////////////////////////////////////////////////////////////////////////////
-
 for (var i = 0; i < loopCount; i += 1) {
 
   currentBand = bands[i];
-  var listBand = '<li>' + currentBand + '</li>';  //this feels wrong!!!!
+  var listBand = '<li>' + currentBand + '</li>';  
   bandElement.innerHTML += listBand + '<br>'
 
   currentVeggie = vegetables[i];
-  var listVeggie = '<li>' + currentVeggie + '</li>';  
+  var listVeggie = '<li>' + currentVeggie + '</li>'; 
   veggieElement.innerHTML += listVeggie + '<br>'
 };
-
-// document.getElementById('foo').innerHTML = a + m + b;
-// document.getElementById('foo').innerHTML = a + m + b;
